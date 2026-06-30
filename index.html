@@ -45,7 +45,9 @@
       color: var(--ink);
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
       line-height: 1.65;
-      -webkit-font-smoothing: antialiased
+      -webkit-font-smoothing: antialiased;
+      word-break: keep-all;
+      overflow-wrap: break-word
     }
 
     .wrap {
@@ -647,6 +649,21 @@
       header h1 {
         font-size: 24px
       }
+
+      /* mobile: 표 헤더 줄바꿈 허용 + 글자 축소로 화면 안에 맞춤 */
+      table {
+        font-size: 13px
+      }
+
+      th {
+        white-space: normal;
+        font-size: 12px
+      }
+
+      th,
+      td {
+        padding: 9px 8px
+      }
     }
   </style>
 </head>
@@ -671,7 +688,7 @@
       <h3>한 줄 요약</h3>
       <p>Shape Up으로 스프린트마다 <b>설계(분석·기획·디자인)</b>와 <b>개발(빌드·QA)</b>을 분리해 관리</p>
       <div class="flow">
-        <span class="step">7~8월 틀 만들기 — 셸·DS·온보딩</span><span class="arrow">→</span>
+        <span class="step">7~8월 틀 만들기 — 셸·SDS·온보딩</span><span class="arrow">→</span>
         <span class="step">9~10월 본체+데이터 — 화면군·인사이트 병행</span><span class="arrow">→</span>
         <span class="step">11월 진입경험 — 튜토리얼·10분세팅</span>
       </div>
@@ -701,8 +718,7 @@
         <tr>
           <td><span class="us">U2</span></td>
           <td><strong>온보딩·튜토리얼·설치</strong></td>
-          <td>멀티프로덕트 온보딩 · 제품별 온보딩 스텝 · 멀티프로덕트 튜토리얼 · 10분 초기세팅 <span style="color:var(--faint)">(자동설치 정확도는 개발 전담 →
-              제외)</span></td>
+          <td>멀티프로덕트 온보딩 · 제품별 온보딩 스텝 · 멀티프로덕트 튜토리얼 · 10분 초기세팅</td>
           <td>코어 + 전 스쿼드</td>
         </tr>
         <tr>
@@ -731,7 +747,7 @@
           <td><strong>코어 통합 레이어<br>— 디자인 챕터 리드 (나)</strong></td>
           <td>1</td>
           <td><strong>정의·조율<br>(Owner)</strong></td>
-          <td>통합 IA·셸 스펙, DS·UI 킷, 온보딩 골격, 제품화면군 골격, 인사이트 표면 골격, 스쿼드 간 정합성</td>
+          <td>통합 IA·셸 스펙, SDS, 온보딩 골격, 제품화면군 골격, 인사이트 표면 골격, 스쿼드 간 정합성</td>
           <td><strong>S1~S6 전 구간</strong> (골격 먼저, 그 위를 스쿼드가 채움)</td>
         </tr>
         <tr>
@@ -793,7 +809,7 @@
       </div>
       <div class="note" style="margin-top:16px">정석은 <b>설계 선행 → 개발 후행</b>이되, 핸드오프 직전 설계 후반부와 개발 초반이 <b>1~2주 겹친다</b>(개발팀과
         논의하며 스펙 조정되는 구간). 설계가 완전히 끝나길 기다리지 않고 확정된 부분부터 개발이 먼저 붙는다.</div>
-      <div class="note" style="margin-top:10px"><b>DS·UI 킷(토큰·컴포넌트·폴리시)은 별도 스프린트가 아니라 전 구간 상시 병행 트랙</b> — 실사용 화면에서 등장하는
+      <div class="note" style="margin-top:10px"><b>SDS(토큰·컴포넌트·폴리시)는 별도 스프린트가 아니라 전 구간 상시 병행 트랙</b> — 실사용 화면에서 등장하는
         컴포넌트를 기준으로 킷이 결정되므로, 7월 최소 시드 후 각 스프린트와 함께 계속 확장. 단 <b>브랜딩·로그인은 시각적 완결성이 필요해 별도 2주(S2)로 분리</b>.</div>
     </section>
 
@@ -820,12 +836,6 @@
           <td>그릇 안에 담기는 통합의 <b>본체 화면</b>. 셸·IA 바로 위에서 조립되는 핵심 결과물</td>
         </tr>
         <tr>
-          <td><span class="pri p0">P0 · 상시</span></td>
-          <td><strong>DS·UI 킷</strong><br>(토큰·컴포넌트·폴리시)</td>
-          <td><span class="us">U1</span></td>
-          <td><b>별도 스프린트 아님 — 전 구간 상시 병행.</b> 실제 화면에서 쓰이는 걸 기준으로 킷이 결정되므로, 앞에서 완성하지 않고 시드 후 계속 확장</td>
-        </tr>
-        <tr>
           <td><span class="pri p0">P0 · 2주</span></td>
           <td><strong>브랜딩·로그인</strong></td>
           <td><span class="us">U1</span></td>
@@ -850,8 +860,8 @@
           <td>온보딩·화면군 만든 뒤 진입 경험 입힘</td>
         </tr>
       </table>
-      <div class="note">행 순서는 <b>그릇(셸·IA) → 본체(신규 메뉴)</b> 개념 흐름. DS·UI 킷은 전 구간 상시 병행 트랙이고, 브랜딩·로그인만 별도 2주(S2)로 분리. 실제
-        착수는 의존성상 셸·DS 시드가 먼저 → 신규 메뉴가 그 위에서 진행.</div>
+      <div class="note">행 순서는 <b>그릇(셸·IA) → 본체(신규 메뉴)</b> 개념 흐름. 브랜딩·로그인만 별도 2주(S2)로 분리. 실제
+        착수는 의존성상 셸·SDS 시드가 먼저 → 신규 메뉴가 그 위에서 진행.</div>
     </section>
 
     <!-- 4 -->
@@ -901,7 +911,7 @@
           <p class="bn-fix"><i class="fix-dot fix-dot-b"></i>대응 — 낮은 우선순위 화면 개발은 4Q로 이월, 설계는 이 기간 QA·스펙 대응 여력 확보.</p>
         </div>
       </div>
-      <div class="note"><b>흐름</b> — 설계 트랙: 7~8월 셸·DS·온보딩 → 9~10월 화면군·인사이트 병행 → 11월 튜토리얼. 개발 트랙: 7월 말부터 핸드오프 따라 흐르되 빌드
+      <div class="note"><b>흐름</b> — 설계 트랙: 7~8월 셸·SDS·온보딩 → 9~10월 화면군·인사이트 병행 → 11월 튜토리얼. 개발 트랙: 7월 말부터 핸드오프 따라 흐르되 빌드
         꼬리가 분기 말로 밀려 12월 3~4주는 통합 QA + 버퍼.</div>
     </section>
 
@@ -929,7 +939,7 @@
 
         <div class="scard" style="grid-column:1 / -1;background:var(--teal-bg);border-color:#9fe1cb">
           <div class="top">
-            <h4 style="color:var(--teal-ink)">DS·UI 킷 트랙 (토큰·컴포넌트·폴리시) <span
+            <h4 style="color:var(--teal-ink)">SDS 트랙 (토큰·컴포넌트·폴리시) <span
                 style="font-size:12px;font-weight:600;color:#fff;background:var(--teal);padding:2px 8px;border-radius:6px;margin-left:6px">상시
                 병행</span></h4><span class="dur">7월 시드 → 12월 · U1</span>
           </div>
@@ -971,7 +981,7 @@
             <li>전체 화면 세트 + SolutionResultCard 16케이스 + 분기 인터랙션</li>
             <li>각 스쿼드 = 자기 제품 온보딩 스텝(위젯·SNS연동) 디테일</li>
           </ul>
-          <div class="dep">⚠️ 의존성: S1 필수, DS 킷(상시) 컴포넌트 공유. 최대 리스크 → 6주.</div>
+          <div class="dep">⚠️ 의존성: S1 필수, SDS(상시) 컴포넌트 공유. 최대 리스크 → 6주.</div>
         </div>
 
         <div class="scard">
@@ -986,7 +996,7 @@
             <li>화면군 IA, 제품별 핵심 화면 골격, 공용 컴포넌트 매핑</li>
             <li>제품별 화면군 (코어 골격 + 스쿼드 제품 디테일 병렬)</li>
           </ul>
-          <div class="dep">⚠️ 의존성: S1 IA + DS 킷(상시). 4Q 알파카가 호출하므로 확장 가능 구조로.</div>
+          <div class="dep">⚠️ 의존성: S1 IA + SDS(상시). 4Q 알파카가 호출하므로 확장 가능 구조로.</div>
         </div>
 
         <div class="scard">
@@ -1001,7 +1011,7 @@
             <li>통계+KPI 드로어+세그먼트(RFM)+코호트+여정+퍼널+인박스</li>
             <li>7개 화면 + 차트 컴포넌트(크로스 툴팁) + 드로어 + 인박스 카드</li>
           </ul>
-          <div class="dep">⚠️ 의존성: S1 IA + DS 킷(상시), 외부 분석 임베드(개발). S4와 겹침 → 골격 8월 말 당겨 분산.</div>
+          <div class="dep">⚠️ 의존성: S1 IA + SDS(상시), 외부 분석 임베드(개발). S4와 겹침 → 골격 8월 말 당겨 분산.</div>
         </div>
 
         <div class="scard">
@@ -1017,14 +1027,6 @@
             <li>튜토리얼 오버레이 + 제품별 시나리오 + 초기세팅 위저드</li>
           </ul>
           <div class="dep">⚠️ 의존성: S3 온보딩 + S4 제품화면군 (튜토리얼이 가리킬 대상).</div>
-        </div>
-
-        <div class="scard" style="grid-column:1 / -1;border-style:dashed;background:#fbfbfd">
-          <div class="top">
-            <h4 style="color:var(--muted)">자동설치 정확도 — 디자인 일정 제외</h4><span class="dur">개발 전담 · U2</span>
-          </div>
-          <p class="why" style="border:none;padding:0;margin:0">설치 검증·실패 진단·자동 롤백·설치 상태 표시는 개발 전담 업무로 디자인 산출물이 없어 본 일정에서
-            제외. 설치 상태 노출이 디자인에 필요하면 S3 온보딩 컴포넌트에 흡수.</p>
         </div>
 
       </div>
@@ -1052,10 +1054,6 @@
           </div>
         </div>
         <div class="row">
-          <div class="r-risk">자동설치 정확도 (개발 전담)</div>
-          <div class="r-fix">디자인 산출물 없음 → 본 일정 제외. 설치 상태 노출 필요분만 S3 온보딩에 흡수</div>
-        </div>
-        <div class="row">
           <div class="r-risk">S5 외부 분석 임베드 개발 지연</div>
           <div class="r-fix">mock 데이터로 화면 선행, 실데이터 경계 명시</div>
         </div>
@@ -1065,7 +1063,7 @@
         </div>
         <div class="row">
           <div class="r-risk">공통 컴포넌트 중복 정의</div>
-          <div class="r-fix">DS 킷 상시 트랙 단일 소스, 스쿼드 소비·제안</div>
+          <div class="r-fix">SDS 상시 트랙 단일 소스, 스쿼드 소비·제안</div>
         </div>
         <div class="row">
           <div class="r-risk">통합 레이어 디자인 챕터 리드 1명 부담</div>
@@ -1078,7 +1076,7 @@
 
   <script>
     const rows = [
-      { n: "DS·UI 킷 트랙 (상시)", us: "U1", trk: [4.167, 91.667, "상시 병행 — 실사용 기준 확장"] },
+      { n: "SDS 트랙 (상시)", us: "U1", trk: [4.167, 91.667, "상시 병행 — 실사용 기준 확장"] },
       { n: "S1 콘솔 셸·IA", us: "U1", d: [0, 8.333, "2주"], b: [4.167, 8.333, "2주"] },
       { n: "S2 브랜딩·로그인", us: "U1", d: [8.333, 8.333, "2주"], b: [12.5, 4.167, "1주"] },
       { n: "S3 온보딩+제품스텝", us: "U2", d: [8.333, 25, "5.5주"], b: [25, 25, "5주"] },
