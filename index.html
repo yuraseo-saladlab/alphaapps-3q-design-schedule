@@ -246,7 +246,7 @@
     }
 
     .months .lbl {
-      width: 180px;
+      width: 260px;
       flex: none
     }
 
@@ -269,7 +269,7 @@
     }
 
     .grow .lbl {
-      width: 200px;
+      width: 260px;
       flex: none;
       font-size: 12.5px;
       padding-right: 12px
@@ -1229,13 +1229,17 @@
     <!-- TL;DR -->
     <div class="tldr">
       <h3>한 줄 요약</h3>
-      <p>설계자 <b>2명(유라·설계자2)</b>이 7~12월 <b>15개 스코프</b>를 분담. 통합 틀(U1)을 먼저 세우고 그 위에 온보딩(U2)·인사이트(U3)를 얹는다. 막대는 설계 기간이고 <b>개발은 별도 트랙</b>.</p>
+      <p>설계자 <b>2명(유라·설계자2)</b>이 7~12월 <b>15개 스코프</b>를 분담. 통합 틀(U1)을 먼저 세우고 그 위에 온보딩(U2)·인사이트(U3)를 얹는다. 막대는 설계 기간이고
+        <b>개발은 별도 트랙</b>.
+      </p>
       <div class="flow">
         <span class="step">7월 · 공통+U1 — 틀·브랜딩·로그인</span><span class="arrow">→</span>
         <span class="step">8월 · U2 — 온보딩·튜토리얼</span><span class="arrow">→</span>
         <span class="step">9~12월 · U3 — 인사이트 7개</span>
       </div>
-      <p class="risk"><b style="color:var(--coral-ink)">핵심 리스크</b> — 9~12월 인사이트 7개를 2명이 쉼 없이 연속 진행. 한 명 이탈 시 전체가 밀림. <span style="color:var(--faint)">완충: 우선순위 낮은 화면 이월 · SDS 단일 소스로 백업.</span></p>
+      <p class="risk"><b style="color:var(--coral-ink)">핵심 리스크</b> — 9~12월 인사이트 7개를 2명이 쉼 없이 연속 진행. 한 명 이탈 시 전체가 밀림.
+        <span style="color:var(--faint)">완충: 우선순위 낮은 화면 이월 · SDS 단일 소스로 백업.</span>
+      </p>
     </div>
 
     <!-- 1 · 타임라인 -->
@@ -1271,7 +1275,8 @@
         <button id="editToggle" class="ebtn">✏️ 일정 편집</button>
         <div id="editor" class="editor" hidden>
           <p class="ehint">시작월·주, 설계/개발 주수를 바꾸면 간트·보드가 바로 반영됩니다. 이 브라우저에 자동 저장돼요. 영구 저장(파일 반영)은 <b>코드 복사</b> 후 파일 맨 아래
-            <code>DEFAULT_SCHED</code>에 붙여넣기.</p>
+            <code>DEFAULT_SCHED</code>에 붙여넣기.
+          </p>
           <div id="editRows"></div>
           <div class="erow-actions">
             <button id="copyCode" class="ebtn">📋 코드 복사</button>
@@ -1368,7 +1373,8 @@
         <p class="ssub">디자인 설계자 <b>2명(유라 + 설계자2)</b>이 전 구간 분담. 통합 틀(IA·레이아웃·SDS)은 유라가 단일 소스로 정의 → 나머지는 그 위에 얹음.</p>
         <div class="people">
           <div class="pcard">
-            <div class="phd"><span class="pname">유라</span><span class="prole">디자인 리드</span><span class="pspan">7~12월 전 구간</span></div>
+            <div class="phd"><span class="pname">유라</span><span class="prole">디자인 리드</span><span class="pspan">7~12월 전
+                구간</span></div>
             <ul>
               <li><b>통합 틀 정의</b> — IA/메뉴(S2)·SDS·정합성</li>
               <li><b>화면</b> — 신규메뉴(S4)</li>
@@ -1377,7 +1383,8 @@
             </ul>
           </div>
           <div class="pcard c2">
-            <div class="phd"><span class="pname">설계자2</span><span class="prole">설계</span><span class="pspan">7~12월 전 구간</span></div>
+            <div class="phd"><span class="pname">설계자2</span><span class="prole">설계</span><span class="pspan">7~12월 전
+                구간</span></div>
             <ul>
               <li><b>U1</b> — 로그인(S1)·공통 레이아웃(S3)</li>
               <li><b>U2</b> — 온보딩(S5)</li>
