@@ -457,6 +457,15 @@
       font-variant-numeric: tabular-nums
     }
 
+    .tacobj {
+      padding: 9px 16px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--ink-2);
+      background: var(--surface-2);
+      border-bottom: 1px solid var(--line)
+    }
+
     .sclist {
       display: flex;
       flex-direction: column
@@ -1429,10 +1438,10 @@
     function fmtD(d) { const p = d.split('-'); return (+p[1]) + '월 ' + (+p[2]) + '일'; }
 
     const GROUPS = {
-      '공통': { cls: 'cm', tk: '공통', tn: 'SDS · 브랜딩' },
-      'U1': { cls: '', tk: 'U1', tn: '관리화면 틀·IA + 로그인' },
-      'U2': { cls: 'u2', tk: 'U2', tn: '온보딩·튜토리얼' },
-      'U3': { cls: 'u3', tk: 'U3', tn: '인사이트 표면' }
+      '공통': { cls: 'cm', tk: '공통', tn: 'SDS · 브랜딩', obj: '전 제품이 한 톤·한 규칙으로 보이게 — 브랜드와 디자인 시스템 기반을 깐다.' },
+      'U1': { cls: '', tk: 'U1', tn: '관리화면 틀·IA + 로그인', obj: '흩어진 5개 제품을 하나의 관리화면으로 — 통합 셸·IA와 진입(로그인)을 세운다.' },
+      'U2': { cls: 'u2', tk: 'U2', tn: '온보딩·튜토리얼', obj: '처음 쓰는 사람도 막힘없이 시작 — 온보딩·튜토리얼·초기 세팅을 잇는다.' },
+      'U3': { cls: 'u3', tk: 'U3', tn: '인사이트 표면', obj: '운영자가 콘솔 안에서 데이터로 판단 — 통합 인사이트 화면을 제공한다.' }
     };
     const GROUP_ORDER = ['공통', 'U1', 'U2', 'U3'];
     const GCLR = { '공통': 'c0', 'U1': 'c1', 'U2': 'c2', 'U3': 'c3' };
@@ -1630,7 +1639,7 @@
         const ord = (ITEMORD[gid] && ITEMORD[gid].length) ? ITEMORD[gid] : byG[gid].map(s => s.id);
         const items = ord.map(id => byId[id]).filter(Boolean);
         const tac = document.createElement('div'); tac.className = 'tac';
-        let html = `<div class="tachead ${m.cls}"><span class="tk">${m.tk}</span><span class="tn">${m.tn}</span><span class="tc">${items.length} 스코프</span></div><div class="sclist" data-grp="${gid}">`;
+        let html = `<div class="tachead ${m.cls}"><span class="tk">${m.tk}</span><span class="tn">${m.tn}</span><span class="tc">${items.length} 스코프</span></div>${m.obj ? `<div class="tacobj">🎯 ${m.obj}</div>` : ''}<div class="sclist" data-grp="${gid}">`;
         items.forEach(s => {
           const off = (s.sprint === '-' || s.sprint === '상시') ? ' off' : '';
           html += `<button class="scbtn" draggable="true" data-id="${s.id}" data-grp="${gid}"><span class="dh">⋮⋮</span><span class="sd ${s.st}"></span><span class="nm">${s.title}</span><span class="sdur">${s.ddays}</span><span class="spx${off}">${s.sprint}</span></button>`;
