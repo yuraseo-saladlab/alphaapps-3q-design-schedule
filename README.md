@@ -17,7 +17,6 @@ https://github.com/yuraseo-saladlab/alphaapps-3q-design-schedule
 | 파일 | 설명 |
 |------|------|
 | `index.html` | 공유 링크에서 보이는 메인 페이지 |
-| `AlphaApps_3Q_디자인_일정.html` | 원본 HTML |
 | `AlphaApps_3Q_디자인_일정.md` | 마크다운 버전 |
 
 ## ✏️ 내용을 수정했을 때
