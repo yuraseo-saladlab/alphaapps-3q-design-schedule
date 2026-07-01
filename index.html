@@ -914,6 +914,224 @@
       margin: 0
     }
 
+    /* 연결 화면 (짭파카 구현 매핑) */
+    .psec.pages .phint {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 9px;
+      padding: 8px 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--line-2);
+      border-radius: 8px
+    }
+
+    .psec.pages .phint b {
+      color: var(--coral-ink)
+    }
+
+    .psec.pages ul.plist {
+      gap: 5px
+    }
+
+    .plist li {
+      padding-left: 0
+    }
+
+    .plist .pgrp {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: var(--ink);
+      margin: 9px 0 2px
+    }
+
+    .plist li:first-child .pgrp {
+      margin-top: 0
+    }
+
+    .plist a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--ink-2);
+      padding: 5px 9px;
+      border: 1px solid var(--line-2);
+      border-radius: 7px;
+      background: var(--surface-2)
+    }
+
+    .plist a:hover {
+      border-color: var(--accent);
+      background: var(--accent-bg)
+    }
+
+    .plist a.nolink {
+      cursor: default
+    }
+
+    .plist a.nolink:hover {
+      border-color: var(--line-2);
+      background: var(--surface-2)
+    }
+
+    .pdot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex: none
+    }
+
+    .pdot.d-full {
+      background: var(--good)
+    }
+
+    .pdot.d-mock {
+      background: var(--warn)
+    }
+
+    .pdot.d-stub {
+      background: var(--none)
+    }
+
+    .pdot.d-comp {
+      background: var(--blue)
+    }
+
+    .pdot.d-none {
+      background: var(--red)
+    }
+
+    .plist code {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      color: var(--accent-2);
+      background: none;
+      padding: 0;
+      flex: none
+    }
+
+    .plist .pnm {
+      flex: 1;
+      min-width: 0;
+      font-size: 12px;
+      line-height: 1.4
+    }
+
+    .plist .ptag {
+      font-size: 9px;
+      font-weight: 800;
+      border-radius: 4px;
+      padding: 1px 5px;
+      flex: none;
+      font-family: var(--mono)
+    }
+
+    .ptag.t-full {
+      background: var(--good-bg);
+      color: #1f6442
+    }
+
+    .ptag.t-mock {
+      background: var(--warn-bg);
+      color: #8a5e0f
+    }
+
+    .ptag.t-stub {
+      background: var(--none-bg);
+      color: #5f665f
+    }
+
+    .ptag.t-comp {
+      background: var(--blue-bg);
+      color: var(--blue)
+    }
+
+    .ptag.t-none {
+      background: var(--red-bg);
+      color: var(--red)
+    }
+
+    /* UX/SDS 2축 판정 배지 + 설계부하 요약 */
+    .psec.pages .jsum {
+      font-size: 11px;
+      color: var(--ink-2);
+      margin: 0 0 9px;
+      padding: 7px 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--line-2);
+      border-radius: 8px;
+      font-variant-numeric: tabular-nums
+    }
+
+    .plist .pli {
+      display: flex;
+      align-items: stretch;
+      gap: 6px;
+      padding-left: 0
+    }
+
+    .pli .pmain {
+      flex: 1;
+      min-width: 0
+    }
+
+    .jwrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-end;
+      flex: none;
+      max-width: 138px
+    }
+
+    .jp {
+      font-size: 8.5px;
+      font-weight: 800;
+      font-family: var(--mono);
+      border-radius: 4px;
+      padding: 1px 5px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      text-align: center;
+      letter-spacing: .03em;
+      user-select: none;
+      line-height: 1.5
+    }
+
+    .jp.sp {
+      font-size: 8px;
+      padding: 1px 4px
+    }
+
+    .jp:hover {
+      border-color: currentColor
+    }
+
+    .jp.j-g {
+      background: var(--good-bg);
+      color: #1f6442
+    }
+
+    .jp.j-y {
+      background: var(--warn-bg);
+      color: #8a5e0f
+    }
+
+    .jp.j-r {
+      background: var(--red-bg);
+      color: var(--red)
+    }
+
+    .jp.j-n {
+      background: var(--gray-bg);
+      color: var(--gray)
+    }
+
     /* keys / status legend */
     .keys {
       display: flex;
@@ -1135,6 +1353,24 @@
       color: var(--ink)
     }
 
+    td code {
+      font-family: var(--mono);
+      font-size: 11px;
+      background: var(--line-2);
+      padding: 1px 5px;
+      border-radius: 4px;
+      color: var(--accent-2)
+    }
+
+    td a {
+      text-decoration: none;
+      border-bottom: 1px solid var(--line)
+    }
+
+    td a:hover code {
+      background: var(--accent-bg)
+    }
+
     .note {
       font-size: 13px;
       color: var(--muted);
@@ -1222,16 +1458,19 @@
     <div class="container">
       <p class="eyebrow">AlphaApps 대통합 · 3Q Design Plan</p>
       <h1 class="title">알파앱스 대통합 — 3Q 디자인 일정</h1>
-      <p class="sub">17개 스코프(목표1~목표3)를 클릭하면 <b style="color:#EAF2F0">담당 스프린트·우선순위·기간·구현상태 + 목적·유저스토리·AC·데모</b>가 펼쳐집니다. 일정
+      <p class="sub">17개 스코프(목표1~목표3)를 클릭하면 <b style="color:#EAF2F0">담당 스프린트·우선순위·기간·구현상태 + 목적·유저스토리·AC·데모</b>가 펼쳐집니다.
+        일정
         산정 중심으로 정리.</p>
       <div class="meta">
         <span>작성 · 서유라</span>
         <span>기간 · 2026.07 ~ 12</span>
         <span>범위 · 통합 알파앱스 (목표1+목표2+목표3)</span>
-        <span>🔗 <a href="https://claude.ai/code/artifact/a75bb181-9a49-4d56-afcb-c7ceb8d3528d" target="_blank" rel="noopener">스코프 카탈로그</a></span>
+        <span>🔗 <a href="https://claude.ai/code/artifact/a75bb181-9a49-4d56-afcb-c7ceb8d3528d" target="_blank"
+            rel="noopener">스코프 카탈로그</a></span>
         <span>🔗 <a href="https://zzapaca.betaapps.link/" target="_blank" rel="noopener">짭파 어드민</a></span>
         <span>🔗 <a href="https://zzapaca.betaapps.link/console/home" target="_blank" rel="noopener">짭파카 유저</a></span>
-        <span>🔗 <a href="https://www.notion.so/Q3-38fa5bcff30b8001a78ac435d08fff6d?source=copy_link" target="_blank" rel="noopener">일정 편집용 노션</a></span>
+        <span>🔗 <a href="https://www.notion.so/Q3-38fa5bcff30b8001a78ac435d08fff6d?source=copy_link" target="_blank"
+            rel="noopener">일정 편집용 노션</a></span>
       </div>
     </div>
   </header>
@@ -1311,6 +1550,10 @@
         <span class="k"><span class="kd none"></span>미착수</span>
         <span class="k"><b style="color:var(--accent)">Sx</b> 담당 스프린트</span>
       </div>
+      <p class="ssub" style="margin:-6px 0 14px">각 상세엔 <b>연결 화면(짭파카 데모)</b>이 붙습니다 — 짭파카는 <b>이상적인 모습의 데모(목표 상)</b>이며, 그대로
+        만드는 게 아니라 이 이상향을 참고해 3Q에 현실적으로 가능한 범위를 새로 설계하기 위한 것. 태그 <b style="color:#1f6442">실동작</b>·<b
+          style="color:#8a5e0f">목업UI</b>·<b style="color:#5f665f">스텁</b>·<b style="color:var(--blue)">공통</b>·<b
+          style="color:var(--red)">미구현</b> = 데모의 현 완성도.</p>
       <div class="board">
         <div class="list" id="list"></div>
         <div class="panel" id="panel">
@@ -1425,6 +1668,106 @@
         </div>
       </section>
 
+      <!-- 6 · 백로그 (스코프 미매핑) -->
+      <section>
+        <div class="shead"><span class="snum">06</span>
+          <h2>백로그 — 스코프 미매핑 영역</h2>
+        </div>
+        <p class="ssub">이상적 데모(짭파카)엔 있으나 <b>위 15개 스코프에 매핑되지 않은</b> 영역. 이번 3Q 설계 범위 <b>밖(백로그)</b>. 통합 셸(S2)·공통
+          레이아웃(S3)·SDS는 공유하지만 전용 설계 대상은 아님 — 필요 시 스코프로 승격해 별도 산정. 라우트 클릭 시 짭파카로 이동.</p>
+        <table>
+          <tr>
+            <th style="width:15%">그룹</th>
+            <th style="width:24%">영역 · 라우트</th>
+            <th>성격</th>
+            <th style="width:12%">현 구현</th>
+          </tr>
+          <tr>
+            <td rowspan="7"><strong>작업 흐름</strong></td>
+            <td><a href="https://zzapaca.betaapps.link/console/ops" target="_blank"
+                rel="noopener"><code>/console/ops</code></a> 목표</td>
+            <td>목표 → 캠페인 → 투두 3계층 운영 보드 (Linear 결)</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/projects" target="_blank"
+                rel="noopener"><code>/console/projects</code></a> 프로젝트</td>
+            <td>Notion식 협업 워크스페이스(내용/작업/대화/문서/에셋 탭)</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/tasks" target="_blank"
+                rel="noopener"><code>/console/tasks</code></a> 할일</td>
+            <td>상태별 필터 + 고밀도 통합 투두 리스트</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/docs" target="_blank"
+                rel="noopener"><code>/console/docs</code></a> 문서</td>
+            <td>문서 허브(템플릿 + 최근 문서) + 상세 뷰</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/knowledge" target="_blank"
+                rel="noopener"><code>/console/knowledge</code></a> 지식</td>
+            <td>RAG 지식 소스 관리 · 검색(업로드 제외)</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/assets" target="_blank"
+                rel="noopener"><code>/console/assets</code></a> 에셋</td>
+            <td>멀티미디어 보관소(썸네일 그리드 + 파일 테이블)</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/memory" target="_blank"
+                rel="noopener"><code>/console/memory</code></a> 기억</td>
+            <td>에이전트 메모리(정체성/상황/선호/경험/지침 탭)</td>
+            <td><span class="chip st-warn">부분</span></td>
+          </tr>
+          <tr>
+            <td rowspan="4"><strong>AI · 자동화</strong></td>
+            <td><a href="https://zzapaca.betaapps.link/console/agents" target="_blank"
+                rel="noopener"><code>/console/agents</code></a> 알파카</td>
+            <td>목적별 AI 에이전트 채널 + 대화 스레드(<code>/console/chat</code>)</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/workflows" target="_blank"
+                rel="noopener"><code>/console/workflows</code></a> 워크플로우</td>
+            <td>노드 캔버스(React Flow) + 알파카 자동 생성</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/diagnose" target="_blank"
+                rel="noopener"><code>/console/diagnose</code></a> 진단</td>
+            <td>알파카 진단 위저드(SSE 로그 + 신호 + 액션 채택)</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://zzapaca.betaapps.link/console/create" target="_blank"
+                rel="noopener"><code>/console/create</code></a> 생성</td>
+            <td>AI 콘텐츠 생성 스튜디오(이미지/배너/카피) · S5에서도 참조</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+          <tr>
+            <td rowspan="1"><strong>도구</strong></td>
+            <td><a href="https://zzapaca.betaapps.link/console/tools" target="_blank"
+                rel="noopener"><code>/console/tools</code></a> 도구</td>
+            <td>목적별 기능 쇼트컷 허브 + 즐겨찾기</td>
+            <td><span class="chip st-good">실동작</span></td>
+          </tr>
+        </table>
+        <div class="note">
+          <p class="nh">백로그 처리 원칙</p>
+          <ul class="nlist">
+            <li>이 영역은 <b>3Q 설계 산정에서 제외</b> (매핑된 15개만 구현 범위).</li>
+            <li>다만 <b>통합 셸·SDS·공통 레이아웃을 공유</b>하므로, S2/S3/SDS 설계 시 이 화면들도 담을 수 있는 <b>확장 가능 구조</b>로 설계.</li>
+            <li class="w">스코프로 올릴 경우 담당·기간 재산정 필요 — 특히 워크플로우 캔버스·프로젝트는 신규 UI 패러다임이라 부하 큼.</li>
+          </ul>
+        </div>
+      </section>
+
     </div>
   </div>
 
@@ -1504,7 +1847,7 @@
         dep: 'S2 IA 위에서 정의.'
       },
       {
-        id: 'S4', grp: '목표1', sprint: 'S4', title: '신규 메뉴 페이지 + 화면 골격', st: 'warn', pri: 'P1',
+        id: 'S4', grp: '목표1', sprint: 'S4', title: '위성 스쿼드 기존 화면 유지/연결 (리뷰, 푸시, 업셀, 캔버스)', st: 'warn', pri: 'P1',
         owner: '유라 + 개발자', start: '2026-07-29', end: '2026-08-18', ddays: '14일', mod: ['M7'],
         purpose: '상품·리뷰·메시지·사이트 등 제품 화면군을 통합 관리화면에 구현한다.',
         us: '운영자로서 각 제품 기능을 통합 관리화면에서 쓰고 싶다.',
@@ -1595,6 +1938,142 @@
       }
     ];
 
+    /* ========================================================
+       연결 화면 매핑 — 각 스코프에 실제 구현된 짭파카(zzapaca) 페이지.
+       d: full=실동작 · mock=목업UI · stub=준비중스텁 · comp=공통컴포넌트 · none=미구현
+       g: 소그룹 헤더. r: 라우트(클릭 이동). 정확 범위·일정 산정용.
+       ======================================================== */
+    const APP_BASE = 'https://zzapaca.betaapps.link';
+    const DL = { full: '실동작', mock: '목업UI', stub: '스텁', comp: '공통', none: '미구현' };
+    const PAGES = {
+      SDS: [
+        { t: 'console-shell — 레일+2차 LNB 크롬', d: 'comp' },
+        { t: 'top-bar · search-sheet · widget-card', d: 'comp' },
+        { t: '공통 프리미티브(Toggle·SettingCard·FilterTab·StatCell)', d: 'comp' },
+        { t: '디자인 토큰(색·타이포·간격) — design.md 미분리', d: 'mock' }
+      ],
+      BR: [
+        { r: '/login', t: '로그인 로고·🦙 마스코트', d: 'full' },
+        { r: '/console/home', t: 'AlpacaMark 마스코트', d: 'full' },
+        { t: 'favicon·OG·브랜드 가이드 — 미정립', d: 'none' }
+      ],
+      S1: [{ r: '/login', t: '로그인 폼(POST /api/login·쿠키·리다이렉트)', d: 'full' }],
+      S2: [
+        { r: '/console/home', t: '통합 셸 진입 — 레일 3그룹·2차 LNB', d: 'full' },
+        { t: 'sectionOf/labelOf·핀 세션유지·호버 미리보기', d: 'full' }
+      ],
+      S3: [
+        { t: 'top-bar 포털 슬롯(고정 헤더·브레드크럼)', d: 'full' },
+        { t: 'search-sheet FAB 3모드(floating/side/full)', d: 'full' },
+        { t: '전 페이지 일관 적용', d: 'full' }
+      ],
+      S4: [
+        { g: '상품 (12페이지)' },
+        { r: '/console/product', t: '상품 허브(지표+3섹션)', d: 'full' },
+        { r: '/console/product/orders', t: '주문 관리(상태 탭·테이블)', d: 'full' },
+        { r: '/console/product/recommend', t: 'AI 추천(+수동/가중치/옵션셋)', d: 'full' },
+        { r: '/console/product/display/events', t: '이벤트·프로모션', d: 'full' },
+        { r: '/console/product/display', t: '진열(main/all/detail/cart)', d: 'mock' },
+        { g: '리뷰 (27페이지 · 최대 영역)' },
+        { r: '/console/review', t: '리뷰 목록(통계·탭·AI태그)', d: 'full' },
+        { r: '/console/review/collect/request', t: '수집 4채널(요청/스토어/SNS/스태프)', d: 'full' },
+        { r: '/console/review/design/induce', t: '설계 4종·라이브 미리보기', d: 'full' },
+        { r: '/console/review/manage/badge', t: '관리 4종(뱃지/댓글/키워드/연동)', d: 'full' },
+        { r: '/console/review/analysis/briefing', t: '분석 5종(브리핑/모니터링/태그…)', d: 'full' },
+        { r: '/console/review/settings/points', t: '설정 7종(포인트/설문/갤러리…)', d: 'mock' },
+        { g: '메시지 (6페이지)' },
+        { r: '/console/message/ads', t: '광고성 메시지(세팅·프리셋)', d: 'full' },
+        { r: '/console/message/history', t: '발송 내역', d: 'full' },
+        { r: '/console/message/onsite', t: '온사이트/공지/설정', d: 'mock' },
+        { g: '사이트 · 기타' },
+        { r: '/console/site', t: '웹빌더(캔버스·섹션·디바이스 토글)', d: 'mock' },
+        { r: '/console/upsell', t: '업셀 위젯 설정', d: 'mock' },
+        { r: '/console/push', t: '푸시 — 준비중', d: 'stub' }
+      ],
+      S5: [
+        { t: '전용 온보딩 플로우 없음 — 신규 설계 필요', d: 'none' },
+        { r: '/console/create', t: '생성 스튜디오(온보딩 아님)', d: 'full' }
+      ],
+      S6: [
+        { r: '/console/settings', t: '설정 4탭(개인/계정/조직/구독)·폼 목업', d: 'mock' },
+        { r: '/console/ops-guide', t: '운영 가이드(내부·읽기전용)', d: 'full' },
+        { t: '인앱 튜토리얼 오버레이·초기세팅 위저드 없음', d: 'none' }
+      ],
+      S7: [
+        { r: '/console/analytics', t: '분석 개요(3축)', d: 'full' },
+        { r: '/console/analytics/signup', t: '회원가입 분석(누적 막대)', d: 'full' },
+        { r: '/console/analytics/product', t: '축별 상세', d: 'mock' },
+        { t: '⚠ 헤파카 임베드 아님 — 네이티브 CSS 목업', d: 'none' }
+      ],
+      S8: [
+        { r: '/console/customer', t: '고객 조회(고밀도 테이블)', d: 'full' },
+        { r: '/console/customer/segments', t: '세그먼트 — 조건빌더(RFM) 없음', d: 'mock' }
+      ],
+      S9: [
+        { r: '/console/home', t: '홈 KPI 타일(6열·변화율)', d: 'full' },
+        { t: '전역 지표 drawer(metrics-drawer) 미구현', d: 'none' }
+      ],
+      S10: [{ r: '/console/customer/cohort', t: '코호트·리텐션 히트맵', d: 'full' }],
+      S11: [
+        { r: '/console/inbox', t: '인박스(진단 카드+대화)', d: 'full' },
+        { r: '/console/inbox/alerts', t: '위험 알림(확인/무시)', d: 'full' },
+        { r: '/console/inbox/approvals', t: '승인 대기(승인/검토/반려)', d: 'full' },
+        { r: '/console/inbox/mentions', t: '멘션/안읽음/진단 탭·필터', d: 'stub' }
+      ],
+      S12: [{ r: '/console/customer/journey', t: '고객 여정(퍼널+전환 게이지)', d: 'full' }],
+      S13: [
+        { r: '/console/analytics/funnel', t: '퍼널(6단계 전환율)', d: 'full' },
+        { r: '/console/acquisition', t: '유입 리포트 — 준비중', d: 'stub' }
+      ]
+    };
+    /* 판정 기본값 — 화면(라우트)별 초기 UX/SDS 추정. g=타당/준수 · y=부분/리스타일 · r=재설계/미적용.
+       같은 화면은 어느 스코프에서든 동일 판정(라우트 키). 클릭해 조정하면 localStorage에 저장. */
+    const JDEF = {
+      '/login': { ux: 'g', sds: 'y' }, '/console/home': { ux: 'g', sds: 'y' },
+      '/console/product': { ux: 'g', sds: 'y' }, '/console/product/orders': { ux: 'g', sds: 'y' },
+      '/console/product/recommend': { ux: 'g', sds: 'y' }, '/console/product/display/events': { ux: 'g', sds: 'y' },
+      '/console/product/display': { ux: 'y', sds: 'y' }, '/console/review': { ux: 'g', sds: 'y' },
+      '/console/review/collect/request': { ux: 'g', sds: 'y' }, '/console/review/design/induce': { ux: 'g', sds: 'y' },
+      '/console/review/manage/badge': { ux: 'g', sds: 'y' }, '/console/review/analysis/briefing': { ux: 'g', sds: 'y' },
+      '/console/review/settings/points': { ux: 'y', sds: 'y' }, '/console/message/ads': { ux: 'g', sds: 'y' },
+      '/console/message/history': { ux: 'g', sds: 'y' }, '/console/message/onsite': { ux: 'y', sds: 'y' },
+      '/console/site': { ux: 'y', sds: 'y' }, '/console/upsell': { ux: 'y', sds: 'y' },
+      '/console/push': { ux: 'r', sds: 'r' }, '/console/create': { ux: 'y', sds: 'y' },
+      '/console/settings': { ux: 'y', sds: 'y' }, '/console/ops-guide': { ux: 'g', sds: 'y' },
+      '/console/analytics': { ux: 'g', sds: 'y' }, '/console/analytics/signup': { ux: 'g', sds: 'y' },
+      '/console/analytics/product': { ux: 'y', sds: 'y' }, '/console/customer': { ux: 'g', sds: 'y' },
+      '/console/customer/segments': { ux: 'r', sds: 'y' }, '/console/customer/cohort': { ux: 'g', sds: 'y' },
+      '/console/inbox': { ux: 'g', sds: 'y' }, '/console/inbox/alerts': { ux: 'g', sds: 'y' },
+      '/console/inbox/approvals': { ux: 'g', sds: 'y' }, '/console/inbox/mentions': { ux: 'r', sds: 'r' },
+      '/console/customer/journey': { ux: 'g', sds: 'y' }, '/console/analytics/funnel': { ux: 'g', sds: 'y' },
+      '/console/acquisition': { ux: 'r', sds: 'r' }
+    };
+    const LS_JUDGE = 'aa3q_judge_v1';
+    let JUDGE = (function () { try { return JSON.parse(localStorage.getItem(LS_JUDGE)) || {}; } catch (e) { return {}; } })();
+    function saveJudge() { try { localStorage.setItem(LS_JUDGE, JSON.stringify(JUDGE)); } catch (e) { } }
+    function judgeVal(route, ax, fb) { return (JUDGE[route] && JUDGE[route][ax]) || (JDEF[route] && JDEF[route][ax]) || fb || 'y'; }
+
+    /* 서비스화 체크 축 — 빈상태/에러/권한 (미확인 n → 필요 y → 완료 g) */
+    const SVC = [
+      { ax: 'empty', t: '빈', ti: '빈 상태 — 데이터 0건·첫 진입 화면' },
+      { ax: 'err', t: '에러', ti: '에러·로딩·실패 상태 처리' },
+      { ax: 'perm', t: '권한', ti: '역할·요금제·샵 컨텍스트' }
+    ];
+
+    function pagesHTML(id) {
+      const ps = PAGES[id] || []; if (!ps.length) return '';
+      const cnt = ps.filter(p => !p.g).length;
+      const rows = ps.map(p => {
+        if (p.g) return `<li><span class="pgrp">${p.g}</span></li>`;
+        if (!p.r) return `<li><a class="nolink"><span class="pdot d-${p.d}"></span><span class="pnm">${p.t}</span><span class="ptag t-${p.d}">${DL[p.d]}</span></a></li>`;
+        const ux = judgeVal(p.r, 'ux'), sds = judgeVal(p.r, 'sds');
+        const svc = SVC.map(c => `<span class="jp sp j-${judgeVal(p.r, c.ax, 'n')}" data-k="${p.r}" data-ax="${c.ax}" title="${c.ti} — 클릭: 미확인→필요→완료">${c.t}</span>`).join('');
+        const pills = `<span class="jwrap"><span class="jp j-${ux}" data-k="${p.r}" data-ax="ux" title="UIUX 타당성 — 클릭: 타당→부분→재설계">UX</span><span class="jp j-${sds}" data-k="${p.r}" data-ax="sds" title="SDS 적합도 — 클릭: 준수→리스타일→미적용">SDS</span>${svc}</span>`;
+        return `<li class="pli"><a class="pmain" href="${APP_BASE}${p.r}" target="_blank" rel="noopener"><span class="pdot d-${p.d}"></span><code>${p.r}</code><span class="pnm">${p.t}</span></a>${pills}</li>`;
+      }).join('');
+      return `<div class="psec pages"><h3>연결 화면 · 짭파카 데모 (${cnt})</h3><p class="phint">짭파카는 <b>이상적인 모습을 담은 데모(목표 상)</b> — 그대로가 아니라 참고해 3Q 현실 범위로 새 설계.<br><b>UX·SDS</b>=판정(초록 타당/준수·노랑 부분/리스타일·빨강 재설계/미적용). <b>빈·에러·권한</b>=서비스화 체크(회색 미확인→노랑 필요→초록 완료). <b>클릭해 조정</b>, 자동 저장.</p><p class="jsum"></p><ul class="plist">${rows}</ul></div>`;
+    }
+
     /* 날짜 기본값 보관 + localStorage 오버라이드 적용 */
     const DEF = {}; D.forEach(s => DEF[s.id] = { start: s.start, end: s.end, ddays: s.ddays });
     let OVR = (function () { try { return JSON.parse(localStorage.getItem(LS_OVR)) || {}; } catch (e) { return {}; } })();
@@ -1664,28 +2143,73 @@
         <div class="psec"><h3>유저스토리</h3><p class="usq">${s.us}</p></div>
         <div class="psec ac"><h3>인수조건 (AC)</h3><ul>${s.ac.map(a => `<li>${a}</li>`).join('')}</ul></div>
         <div class="psec demo"><h3>데모 시나리오</h3><ul>${s.demo.map(d => `<li>${d}</li>`).join('')}</ul></div>
+        ${pagesHTML(s.id)}
         <div class="psec"><h3>일정 의존성</h3><p class="pdep">⚠️ ${s.dep}</p></div>`;
       document.querySelectorAll('.scbtn').forEach(b => b.classList.toggle('active', b.dataset.id === s.id));
+      updateJsum();
     }
 
-    /* ----- 클릭(패널) + 드래그(순서) ----- */
+    /* 스코프별 설계 부하 요약 — 연결 화면의 UX/SDS 판정 집계 */
+    function updateJsum() {
+      const box = pbody.querySelector('.jsum'); if (!box) return;
+      const q = sel => pbody.querySelectorAll(sel).length;
+      const uxr = q('.jp[data-ax="ux"].j-r'), uxy = q('.jp[data-ax="ux"].j-y'), uxg = q('.jp[data-ax="ux"].j-g');
+      const sdr = q('.jp[data-ax="sds"].j-r'), sdy = q('.jp[data-ax="sds"].j-y');
+      const svcTodo = q('.sp:not(.j-g)');
+      box.innerHTML = `설계 부하 → <b style="color:var(--red)">재설계 ${uxr}</b> · <b style="color:var(--warn)">부분개선 ${uxy}</b> · <b style="color:var(--good)">유지 ${uxg}</b><br><span style="color:var(--faint)">SDS 미적용 ${sdr} · 리스타일 ${sdy} ｜ 서비스체크 미완 <b style="color:var(--ink-2)">${svcTodo}</b></span>`;
+    }
+
+    /* ITEMORD가 그룹 배치의 단일 소스 — 각 항목의 grp를 순서맵에 맞춰 동기화 (간트 색·패널 크럼브 반영) */
+    function syncGrpFromOrder() {
+      GROUP_ORDER.forEach(gid => (ITEMORD[gid] || []).forEach(id => { if (byId[id]) byId[id].grp = gid; }));
+    }
+
+    /* ----- 클릭(패널) + 드래그(순서·그룹 이동) ----- */
     let dragging = null;
     listEl.addEventListener('click', e => { if (dragging) return; const b = e.target.closest('.scbtn'); if (!b) return; const s = byId[b.dataset.id]; if (s) render(s); });
     listEl.addEventListener('dragstart', e => { const b = e.target.closest('.scbtn'); if (!b) return; dragging = b; b.classList.add('drag'); e.dataTransfer.effectAllowed = 'move'; });
     listEl.addEventListener('dragend', () => { if (dragging) dragging.classList.remove('drag'); setTimeout(() => dragging = null, 0); });
     listEl.addEventListener('dragover', e => {
-      const b = e.target.closest('.scbtn'); if (!b || !dragging || b === dragging) return;
-      if (b.dataset.grp !== dragging.dataset.grp) return; /* 같은 묶음 안에서만 */
-      e.preventDefault();
-      const rect = b.getBoundingClientRect();
-      const after = (e.clientY - rect.top) > rect.height / 2;
-      b.parentNode.insertBefore(dragging, after ? b.nextSibling : b);
+      if (!dragging) return;
+      const b = e.target.closest('.scbtn');
+      if (b && b !== dragging) {
+        /* 공통·목표1~3 어느 묶음으로든 이동 허용 */
+        e.preventDefault();
+        const rect = b.getBoundingClientRect();
+        const after = (e.clientY - rect.top) > rect.height / 2;
+        b.parentNode.insertBefore(dragging, after ? b.nextSibling : b);
+        return;
+      }
+      /* 빈 묶음(항목 0개)에도 떨어뜨릴 수 있게 sclist 자체를 대상으로 허용 */
+      const list = e.target.closest('.sclist');
+      if (list && !list.contains(dragging)) { e.preventDefault(); list.appendChild(dragging); }
     });
     listEl.addEventListener('drop', e => {
       e.preventDefault(); if (!dragging) return;
-      const gid = dragging.dataset.grp;
-      ITEMORD[gid] = Array.from(dragging.parentNode.querySelectorAll('.scbtn')).map(x => x.dataset.id);
-      saveOrder();
+      /* 모든 묶음의 순서를 현재 DOM에서 다시 읽어 저장 (그룹 간 이동 반영) */
+      listEl.querySelectorAll('.sclist').forEach(list => {
+        ITEMORD[list.dataset.grp] = Array.from(list.querySelectorAll('.scbtn')).map(x => x.dataset.id);
+      });
+      syncGrpFromOrder(); saveOrder();
+      const activeId = (document.querySelector('.scbtn.active') || {}).dataset ? (document.querySelector('.scbtn.active') || {}).dataset.id : null;
+      drawGantt(); buildList();
+      if (activeId && byId[activeId]) render(byId[activeId]);
+    });
+
+    /* ----- 연결 화면 판정 클릭 (자동 저장) — UX/SDS: 초록→노랑→빨강 · 서비스화: 회색→노랑→초록 ----- */
+    const JCYCLE = { g: 'y', y: 'r', r: 'g' };
+    const SCYCLE = { n: 'y', y: 'g', g: 'n' };
+    pbody.addEventListener('click', e => {
+      const pill = e.target.closest('.jp'); if (!pill) return;
+      e.preventDefault();
+      const k = pill.dataset.k, ax = pill.dataset.ax;
+      const svc = (ax === 'empty' || ax === 'err' || ax === 'perm');
+      const cyc = svc ? SCYCLE : JCYCLE;
+      const cur = ['g', 'y', 'r', 'n'].find(c => pill.classList.contains('j-' + c)) || (svc ? 'n' : 'g');
+      const nx = cyc[cur];
+      JUDGE[k] = JUDGE[k] || {}; JUDGE[k][ax] = nx; saveJudge();
+      pill.classList.remove('j-g', 'j-y', 'j-r', 'j-n'); pill.classList.add('j-' + nx);
+      updateJsum();
     });
 
     /* ----- 편집기 (시작일/종료일/설계기간) ----- */
@@ -1713,6 +2237,7 @@
     document.getElementById('resetSched').addEventListener('click', () => {
       OVR = {}; ITEMORD = JSON.parse(JSON.stringify(DEFAULT_ITEMORD));
       D.forEach(s => Object.assign(s, DEF[s.id]));
+      syncGrpFromOrder();
       saveOvr(); saveOrder(); buildEditor(); drawGantt(); buildList(); render(byId[ITEMORD['공통'][0]] || D[0]);
       document.getElementById('saveNote').textContent = '기본값 복원됨';
     });
@@ -1724,6 +2249,7 @@
     });
 
     /* ----- init ----- */
+    syncGrpFromOrder();
     buildEditor(); drawGantt(); buildList();
     render(byId[(ITEMORD['공통'] && ITEMORD['공통'][0]) || D[0].id] || D[0]);
   </script>
