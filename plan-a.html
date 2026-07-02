@@ -1456,11 +1456,11 @@
 <body>
   <header class="top">
     <div class="container">
-      <p class="eyebrow">AlphaApps 대통합 · 3Q Design Plan · 2안 (범위 축소)</p>
-      <h1 class="title">알파앱스 대통합 — 3Q 디자인 일정 <span style="font-size:15px;font-weight:700;opacity:.75">· 2안</span></h1>
-      <p class="sub"><b style="color:#EAF2F0">범위 축소 2안</b> — 9개 스코프(목표1~목표2)를 클릭하면 <b style="color:#EAF2F0">담당
-          스프린트·우선순위·기간·구현상태 + 목적·유저스토리·AC·데모·연결 화면</b>이 펼쳐집니다.
-        제외 영역은 하단 백로그(타 스쿼드·타 담당). 일정 산정 중심.</p>
+      <p class="eyebrow">AlphaApps 대통합 · 3Q Design Plan · 1안 (전체 범위)</p>
+      <h1 class="title">알파앱스 대통합 — 3Q 디자인 일정 <span style="font-size:15px;font-weight:700;opacity:.75">· 1안</span></h1>
+      <p class="sub">17개 스코프(목표1~목표3)를 클릭하면 <b style="color:#EAF2F0">담당 스프린트·우선순위·기간·구현상태 + 목적·유저스토리·AC·데모</b>가 펼쳐집니다.
+        일정
+        산정 중심으로 정리.</p>
       <div class="meta">
         <span>작성 · 서유라</span>
         <span>기간 · 2026.07 ~ 12</span>
@@ -1471,7 +1471,7 @@
         <span>🔗 <a href="https://zzapaca.betaapps.link/console/home" target="_blank" rel="noopener">짭파카 유저</a></span>
         <span>🔗 <a href="https://www.notion.so/Q3-38fa5bcff30b8001a78ac435d08fff6d?source=copy_link" target="_blank"
             rel="noopener">일정 편집용 노션</a></span>
-        <span>🔀 <a href="./plan-a.html">1안 (전체 범위) 보기</a></span>
+        <span>🔀 <a href="./index.html">2안 (범위 축소) 보기</a></span>
       </div>
     </div>
   </header>
@@ -1481,17 +1481,16 @@
     <!-- TL;DR -->
     <div class="tldr">
       <h3>한 줄 요약</h3>
-      <p>유라가 <b>김원(프론트)·위성 시민들</b>과 7~11월 <b>9개 스코프(범위 축소 2안)</b>를 <b>스프린트 순서대로 겹침 없이</b> 진행. 통합 틀(목표1: 로그인·IA)을 먼저 세우고, 위성 스쿼드(업셀·푸시·리뷰·캔버스) 화면을 SDS 기준으로 개선하며, 그 위에 튜토리얼(목표2)을 얹는다. 통계·세그먼트·코호트·여정·퍼널·온보딩·인박스 등은 <b>타 스쿼드·타 담당</b>이라 스코프 제외(하단 기록). 막대는 설계 기간이고
+      <p>설계자 <b>2명(유라·설계자2)</b>이 7~12월 <b>15개 스코프</b>를 분담. 통합 틀(목표1)을 먼저 세우고 그 위에 온보딩(목표2)·인사이트(목표3)를 얹는다. 막대는 설계 기간이고
         <b>개발은 별도 트랙</b>.
       </p>
       <div class="flow">
-        <span class="step">7월 · 공통+목표1 — 브랜딩·로그인·IA</span><span class="arrow">→</span>
-        <span class="step">8~10월 · 목표1 위성 개선 — 업셀·푸시·리뷰·캔버스</span><span class="arrow">→</span>
-        <span class="step">11월 · 목표2 — 튜토리얼·초기세팅</span>
+        <span class="step">7월 · 공통+목표1 — 틀·브랜딩·로그인</span><span class="arrow">→</span>
+        <span class="step">8월 · 목표2 — 온보딩·튜토리얼</span><span class="arrow">→</span>
+        <span class="step">9~12월 · 목표3 — 인사이트 7개</span>
       </div>
-      <p class="risk"><b style="color:var(--coral-ink)">핵심 리스크</b> — 범위를 줄였지만 통합 틀(목표1)이 유라 1명에 몰림. 제외 영역이 타 스쿼드에서 진행되므로
-        <b>경계·정합 조율</b> 필요.
-        <span style="color:var(--faint)">완충: SDS 단일 소스로 백업 · 제외 스코프는 승격 시 재산정.</span>
+      <p class="risk"><b style="color:var(--coral-ink)">핵심 리스크</b> — 9~12월 인사이트 7개를 2명이 쉼 없이 연속 진행. 한 명 이탈 시 전체가 밀림.
+        <span style="color:var(--faint)">완충: 우선순위 낮은 화면 이월 · SDS 단일 소스로 백업.</span>
       </p>
     </div>
 
@@ -1543,7 +1542,7 @@
     <!-- 2 · 스코프 보드 -->
     <section>
       <div class="shead"><span class="snum">02</span>
-        <h2>스코프 보드 — 9개 항목 × 일정·상태 (2안)</h2>
+        <h2>스코프 보드 — 15개 항목 × 일정·상태</h2>
       </div>
       <p class="ssub">각 스코프에 담당 스프린트·우선순위·기간·설계기간·담당·구현상태를 매핑. 항목을 누르면 우측에 상세가 열립니다.</p>
       <div class="keys">
@@ -1576,8 +1575,8 @@
           <th>완충</th>
         </tr>
         <tr>
-          <td style="color:var(--red)"><strong>제외 스코프(세그먼트·코호트·여정·퍼널·온보딩)를 타 스쿼드가 병행 — 경계·정합 리스크</strong></td>
-          <td>통합 셸·SDS·데이터 임베드 경계를 우리가 정의 → 타 담당(현준님 등)과 인터페이스만 합의. 승격 시 재산정</td>
+          <td style="color:var(--red)"><strong>9~12월 인사이트 7개를 디자이너 2명이 연속 진행 (부하 집중)</strong></td>
+          <td>한 명 이탈 시 밀림 → 우선순위 낮은 인사이트 화면은 이월 여지, 개발은 별도 트랙으로 분리해 설계 완료분부터 핸드오프</td>
         </tr>
         <tr>
           <td><strong>통합 틀(IA·레이아웃·SDS) 유라 1명 의존</strong></td>
@@ -1627,29 +1626,32 @@
         <div class="shead"><span class="snum">05</span>
           <h2>인원 &amp; 협업 모델</h2>
         </div>
-        <p class="ssub"><b>유라(디자인 리드)</b>가 전 스코프를 주도 — 통합 틀(IA·레이아웃·SDS)을 단일 소스로 정의하고, 프론트(김원)·위성 시민들과 협업.</p>
+        <p class="ssub">디자인 설계자 <b>2명(유라 + 설계자2)</b>이 전 구간 분담. 통합 틀(IA·레이아웃·SDS)은 유라가 단일 소스로 정의 → 나머지는 그 위에 얹음.</p>
         <div class="people">
           <div class="pcard">
-            <div class="phd"><span class="pname">유라</span><span class="prole">디자인 리드</span><span class="pspan">7~11월 전
+            <div class="phd"><span class="pname">유라</span><span class="prole">디자인 리드</span><span class="pspan">7~12월 전
                 구간</span></div>
             <ul>
-              <li><b>통합 틀 정의</b> — 로그인(S1)·IA/메뉴(S2)·SDS·정합성</li>
-              <li><b>위성 화면 개선 리드</b> — 업셀·푸시·리뷰·캔버스(S3~S6) SDS·UX 방향 제시</li>
-              <li><b>진입</b> — 튜토리얼+세팅(S7)</li>
+              <li><b>통합 틀 정의</b> — IA/메뉴(S2)·SDS·정합성</li>
+              <li><b>화면</b> — 신규메뉴(S4)</li>
+              <li><b>진입</b> — 튜토리얼+세팅(S6)</li>
+              <li><b>인사이트</b> — 세그먼트(S8)·코호트(S10)·여정(S12)·퍼널(S13)</li>
             </ul>
           </div>
           <div class="pcard c2">
-            <div class="phd"><span class="pname">김원</span><span class="prole">프론트</span><span class="pspan">구현 협업</span></div>
+            <div class="phd"><span class="pname">설계자2</span><span class="prole">설계</span><span class="pspan">7~12월 전
+                구간</span></div>
             <ul>
-              <li><b>목표1·2</b> — 로그인(S1)·IA(S2)·튜토리얼(S7) 구현 협업</li>
-              <li>설계 완료분부터 개발 핸드오프(별도 트랙)</li>
+              <li><b>목표1</b> — 로그인(S1)·공통 레이아웃(S3)</li>
+              <li><b>목표2</b> — 온보딩(S5)</li>
+              <li><b>인사이트</b> — 통계(S7)·KPI(S9)·인박스(S11)</li>
             </ul>
           </div>
         </div>
         <div class="psub">
           <div class="minicard">
-            <div class="mh">위성 시민들 (업셀·푸시·리뷰·캔버스)</div>
-            각 제품 화면 개선(S3~S6)을 <b>스쿼드가 주도</b>, 유라가 SDS·UX 일관성 검수.
+            <div class="mh">위성 스쿼드 (리뷰·업셀·푸시·캔버스)</div>
+            제품별 화면 디테일 일부만 담당.<br><b>협업 비중 낮음</b> — 필요 시 간헐 편입.
           </div>
           <div class="minicard">
             <div class="mh">브랜딩</div>
@@ -1661,145 +1663,108 @@
           <ul class="nlist">
             <li>통합 틀은 <b>유라가 단일 소스로 정의</b> (중복 정의 금지).</li>
             <li>기획 단계에 개발 AC 정합 리뷰 고정.</li>
-            <li>위성 화면은 각 스쿼드와 SDS·UX 경계 정합.</li>
-            <li class="w"><b>제외 스코프는 타 스쿼드·현준님 등 타 담당</b> — 경계·정합만 조율, 승격 시 재산정.</li>
+            <li>목표3는 데이터/개발과 임베드 경계 정합.</li>
+            <li class="w"><b>9~12월 인사이트 7개를 2명이 연속</b> — 부하 집중, 한 명 이탈 시 밀림.</li>
           </ul>
         </div>
       </section>
 
-      <!-- 6 · 스코프 제외 (참고 기록) -->
+      <!-- 6 · 백로그 (스코프 미매핑) -->
       <section>
         <div class="shead"><span class="snum">06</span>
-          <h2>스코프 제외 (참고 기록)</h2>
+          <h2>백로그 — 스코프 미매핑 영역</h2>
         </div>
-        <p class="ssub">이번 3Q 설계 스코프에서 <b>제외</b>된 영역. 백로그(승격 대기)가 아니라 <b>그냥 제외</b> — <b style="color:var(--coral-ink)">타 스쿼드·현준님 등 타 담당이 진행</b>. 우리가 안 한다는 걸 <b>확인용으로 기록</b>만 해둠. 라우트 클릭 시 짭파카로 이동.</p>
+        <p class="ssub">이상적 데모(짭파카)엔 있으나 <b>위 15개 스코프에 매핑되지 않은</b> 영역. 이번 3Q 설계 범위 <b>밖(백로그)</b>. 통합 셸(S2)·공통
+          레이아웃(S3)·SDS는 공유하지만 전용 설계 대상은 아님 — 필요 시 스코프로 승격해 별도 산정. 라우트 클릭 시 짭파카로 이동.</p>
         <table>
           <tr>
-            <th style="width:30%">영역 · 라우트</th>
-            <th>설명</th>
+            <th style="width:15%">그룹</th>
+            <th style="width:24%">영역 · 라우트</th>
+            <th>성격</th>
             <th style="width:12%">현 구현</th>
           </tr>
           <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/inbox" target="_blank"
-                rel="noopener"><code>/console/inbox</code></a> 인박스</td>
-            <td>인박스·알림 센터(진단·위험·승인·멘션) — 이번 범위서 제외</td>
-            <td><span class="chip st-good">실동작</span></td>
-          </tr>
-          <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/analytics" target="_blank"
-                rel="noopener"><code>/console/analytics</code></a> 통계</td>
-            <td>인사이트/통계(헤파카 임베드) — 데모는 네이티브 CSS 목업</td>
-            <td><span class="chip st-warn">목업</span></td>
-          </tr>
-          <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/customer/segments" target="_blank"
-                rel="noopener"><code>/console/customer/segments</code></a> 세그먼트</td>
-            <td>고객 세그먼트(조건빌더 RFM) — 조건빌더 미구현</td>
-            <td><span class="chip st-warn">목업</span></td>
-          </tr>
-          <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/home" target="_blank"
-                rel="noopener"><code>/console/home</code></a> KPI drawer</td>
-            <td>KPI 대시보드 · 전역 지표 drawer — drawer 미구현</td>
-            <td><span class="chip st-warn">부분</span></td>
-          </tr>
-          <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/customer/cohort" target="_blank"
-                rel="noopener"><code>/console/customer/cohort</code></a> 코호트</td>
-            <td>코호트·리텐션 히트맵</td>
-            <td><span class="chip st-good">실동작</span></td>
-          </tr>
-          <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/customer/journey" target="_blank"
-                rel="noopener"><code>/console/customer/journey</code></a> 여정</td>
-            <td>고객 여정(퍼널+전환 게이지)</td>
-            <td><span class="chip st-good">실동작</span></td>
-          </tr>
-          <tr>
-            <td><a href="https://zzapaca.betaapps.link/console/analytics/funnel" target="_blank"
-                rel="noopener"><code>/console/analytics/funnel</code></a> 퍼널</td>
-            <td>퍼널·유입 리포트(6단계 전환율)</td>
-            <td><span class="chip st-good">실동작</span></td>
-          </tr>
-          <tr>
+            <td rowspan="7"><strong>작업 흐름</strong></td>
             <td><a href="https://zzapaca.betaapps.link/console/ops" target="_blank"
                 rel="noopener"><code>/console/ops</code></a> 목표</td>
-            <td>목표 → 캠페인 → 투두 3계층 운영 보드</td>
+            <td>목표 → 캠페인 → 투두 3계층 운영 보드 (Linear 결)</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/projects" target="_blank"
                 rel="noopener"><code>/console/projects</code></a> 프로젝트</td>
-            <td>Notion식 협업 워크스페이스</td>
+            <td>Notion식 협업 워크스페이스(내용/작업/대화/문서/에셋 탭)</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/tasks" target="_blank"
                 rel="noopener"><code>/console/tasks</code></a> 할일</td>
-            <td>상태별 필터 + 통합 투두 리스트</td>
+            <td>상태별 필터 + 고밀도 통합 투두 리스트</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/docs" target="_blank"
                 rel="noopener"><code>/console/docs</code></a> 문서</td>
-            <td>문서 허브 + 상세 뷰</td>
+            <td>문서 허브(템플릿 + 최근 문서) + 상세 뷰</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/knowledge" target="_blank"
                 rel="noopener"><code>/console/knowledge</code></a> 지식</td>
-            <td>RAG 지식 소스 관리 · 검색</td>
+            <td>RAG 지식 소스 관리 · 검색(업로드 제외)</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/assets" target="_blank"
                 rel="noopener"><code>/console/assets</code></a> 에셋</td>
-            <td>멀티미디어 보관소</td>
+            <td>멀티미디어 보관소(썸네일 그리드 + 파일 테이블)</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/memory" target="_blank"
                 rel="noopener"><code>/console/memory</code></a> 기억</td>
-            <td>에이전트 메모리 관리</td>
+            <td>에이전트 메모리(정체성/상황/선호/경험/지침 탭)</td>
             <td><span class="chip st-warn">부분</span></td>
           </tr>
           <tr>
+            <td rowspan="4"><strong>AI · 자동화</strong></td>
             <td><a href="https://zzapaca.betaapps.link/console/agents" target="_blank"
                 rel="noopener"><code>/console/agents</code></a> 알파카</td>
-            <td>AI 에이전트 채널 + 대화 스레드</td>
+            <td>목적별 AI 에이전트 채널 + 대화 스레드(<code>/console/chat</code>)</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/workflows" target="_blank"
                 rel="noopener"><code>/console/workflows</code></a> 워크플로우</td>
-            <td>노드 캔버스(React Flow) + 자동 생성</td>
+            <td>노드 캔버스(React Flow) + 알파카 자동 생성</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/diagnose" target="_blank"
                 rel="noopener"><code>/console/diagnose</code></a> 진단</td>
-            <td>알파카 진단 위저드</td>
+            <td>알파카 진단 위저드(SSE 로그 + 신호 + 액션 채택)</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
             <td><a href="https://zzapaca.betaapps.link/console/create" target="_blank"
                 rel="noopener"><code>/console/create</code></a> 생성</td>
-            <td>AI 콘텐츠 생성 스튜디오(이미지/배너/카피)</td>
+            <td>AI 콘텐츠 생성 스튜디오(이미지/배너/카피) · S5에서도 참조</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
           <tr>
+            <td rowspan="1"><strong>도구</strong></td>
             <td><a href="https://zzapaca.betaapps.link/console/tools" target="_blank"
                 rel="noopener"><code>/console/tools</code></a> 도구</td>
-            <td>목적별 기능 쇼트컷 허브</td>
+            <td>목적별 기능 쇼트컷 허브 + 즐겨찾기</td>
             <td><span class="chip st-good">실동작</span></td>
           </tr>
         </table>
         <div class="note">
-          <p class="nh">제외 기준</p>
+          <p class="nh">백로그 처리 원칙</p>
           <ul class="nlist">
-            <li><b>3Q 설계 산정에서 완전 제외</b> — 위 9개 스코프만 우리 구현 범위.</li>
-            <li>이 영역은 <b>타 스쿼드·현준님 등 타 담당</b>이 진행 — 여기선 확인용 기록만.</li>
-            <li class="w">통합 셸·SDS는 공유하므로 경계·정합만 조율. 우리 스코프로 되가져올 경우 담당·기간 재산정.</li>
+            <li>이 영역은 <b>3Q 설계 산정에서 제외</b> (매핑된 15개만 구현 범위).</li>
+            <li>다만 <b>통합 셸·SDS·공통 레이아웃을 공유</b>하므로, S2/S3/SDS 설계 시 이 화면들도 담을 수 있는 <b>확장 가능 구조</b>로 설계.</li>
+            <li class="w">스코프로 올릴 경우 담당·기간 재산정 필요 — 특히 워크플로우 캔버스·프로젝트는 신규 UI 패러다임이라 부하 큼.</li>
           </ul>
         </div>
       </section>
@@ -1820,25 +1785,26 @@
 
     const GROUPS = {
       '공통': { cls: 'cm', tk: '공통', tn: 'SDS · 브랜딩', obj: '전 제품이 한 톤·한 규칙으로 보이게 — 브랜드와 디자인 시스템 기반을 깐다.' },
-      '목표1': { cls: '', tk: '목표1', tn: '관리화면 틀·IA·로그인 + 위성 화면 개선', obj: '흩어진 제품을 하나의 관리화면으로 — 통합 셸·IA·로그인을 세우고, 위성 스쿼드(리뷰·푸시·업셀·캔버스) 화면을 SDS 기준으로 일관성·UX 개선.' },
-      '목표2': { cls: 'u2', tk: '목표2', tn: '튜토리얼·초기세팅', obj: '처음 쓰는 사람도 막힘없이 시작 — 인앱 튜토리얼·초기 세팅을 잇는다.' },
-      '목표3': { cls: 'u3', tk: '목표3', tn: '인사이트 표면', obj: '챙길 일을 한 곳으로 — 인박스(진단·위험·승인·멘션)로 상황을 보고 다음 행동을 정한다.' }
+      '목표1': { cls: '', tk: '목표1', tn: '관리화면 틀·IA + 로그인', obj: '흩어진 5개 제품을 하나의 관리화면으로 — 통합 셸·IA와 진입(로그인)을 세운다.' },
+      '목표2': { cls: 'u2', tk: '목표2', tn: '온보딩·튜토리얼', obj: '처음 쓰는 사람도 막힘없이 시작 — 온보딩·튜토리얼·초기 세팅을 잇는다.' },
+      '목표3': { cls: 'u3', tk: '목표3', tn: '인사이트 표면', obj: '흩어진 지표를 하나로 — 매출·고객·퍼널을 보고 다음 행동을 정하고 성과를 만든다.' }
     };
-    const GROUP_ORDER = ['공통', '목표1', '목표2'];
+    const GROUP_ORDER = ['공통', '목표1', '목표2', '목표3'];
     const GCLR = { '공통': 'c0', '목표1': 'c1', '목표2': 'c2', '목표3': 'c3' };
     const DEFAULT_ITEMORD = {
       '공통': ['SDS', 'BR'],
-      '목표1': ['S1', 'S2', 'S3', 'S4', 'S5', 'S6'],
-      '목표2': ['S7']
+      '목표1': ['S1', 'S2', 'S3', 'S4'],
+      '목표2': ['S5', 'S6'],
+      '목표3': ['S7', 'S8', 'S9', 'S10', 'S11', 'S12', 'S13']
     };
-    const LS_OVR = 'aa3q_ovr_v3', LS_ORDER = 'aa3q_order_v6';
+    const LS_OVR = 'aa3q_ovr_v3', LS_ORDER = 'aa3q_order_v3';
     let ITEMORD = (function () { try { const j = JSON.parse(localStorage.getItem(LS_ORDER)); if (j) return j; } catch (e) { } return JSON.parse(JSON.stringify(DEFAULT_ITEMORD)); })();
     function saveOrder() { try { localStorage.setItem(LS_ORDER, JSON.stringify(ITEMORD)); } catch (e) { } }
 
     const D = [
       {
         id: 'SDS', grp: '공통', sprint: '상시', title: 'SDS · UIUX 공통 정책', st: 'warn', nb: 1, pri: '상시',
-        owner: '디자인 + 프론트 ALL', start: '2026-07-01', end: '2026-12-31', ddays: '상시', track: true, mod: ['M7'],
+        owner: '유라 + 개발자', start: '2026-07-01', end: '2026-12-31', ddays: '상시', track: true, mod: ['M7'],
         purpose: '토큰·공용 컴포넌트로 화면 일관성을 보장하고, 토스트·스텝퍼·전환 인디케이터로 흐름·피드백을 다듬는다.',
         us: '개발자로서 동일 컴포넌트로 빠르게 화면을 조립하고, 운영자로서 내 행동의 결과를 즉시 명확히 보고 싶다.',
         ac: ['<code>design.md</code> 토큰(인라인 hex 금지·CSS 변수)', 'ui 킷(Button/Card/Badge/Stat/Table/Tabs/Modal/EmptyState)', '관리화면 딥네이비 레일은 별도 토큰', '전역 토스트(성공/실패)·파괴적 행위 확인 다이얼로그', '위저드 스텝퍼·표 정렬', '페이지 전환 인디케이터(<code>prefers-reduced-motion</code> 존중)'],
@@ -1847,7 +1813,7 @@
       },
       {
         id: 'BR', grp: '공통', sprint: '-', title: '브랜딩 (캐릭터·컬러·로고)', st: 'good', nb: 1, pri: 'P0',
-        owner: '유라 + 디자인 시민들', start: '2026-07-16', end: '2026-07-31', ddays: '11일', mod: ['M7'],
+        owner: '디자이너 모두', start: '2026-07-02', end: '2026-07-16', ddays: '11일', mod: ['M7'],
         purpose: '캐릭터·컬러·로고·파비콘·OG로 브랜드 정체성을 만든다.',
         us: '사용자로서 신뢰감 있는 브랜드를 경험하고 싶다.',
         ac: ['캐릭터·컬러 팔레트·로고(alph 심볼)', 'favicon·OG/메타', '브랜드 톤·사용 가이드'],
@@ -1856,7 +1822,7 @@
       },
       {
         id: 'S1', grp: '목표1', sprint: 'S1', title: '로그인', st: 'good', pri: 'P0',
-        owner: '유라 + 김원', start: '2026-07-20', end: '2026-07-24', ddays: '5일', mod: ['M7'],
+        owner: '설계자2 + 개발자', start: '2026-07-20', end: '2026-07-24', ddays: '5일', mod: ['M7'],
         purpose: '로그인 페이지로 안전한 접근을 제공한다.',
         us: '사용자로서 신뢰감 있는 로그인을 경험하고 싶다.',
         ac: ['<code>/login</code> 페이지(SITE_PASSWORD)', '상대경로 리다이렉트(프록시 뒤 타서비스 누수 방지)', '브랜딩 적용'],
@@ -1864,8 +1830,8 @@
         dep: '브랜딩(공통) 적용. 온보딩 진입 관문.'
       },
       {
-        id: 'S2', grp: '목표1', sprint: 'S2', title: 'IA/메뉴 통폐합 (리뷰·업셀·푸시·캔버스 제외)', st: 'good', pri: 'P0',
-        owner: '유라 + 김원', start: '2026-07-27', end: '2026-07-31', ddays: '5일', mod: ['M7'],
+        id: 'S2', grp: '목표1', sprint: 'S2', title: 'IA/메뉴 통폐합', st: 'good', pri: 'P0',
+        owner: '유라 + 개발자', start: '2026-07-20', end: '2026-07-28', ddays: '7일', mod: ['M7'],
         purpose: '흩어진 제품 메뉴를 하나의 정보구조(레일+2단 LNB)로 통합한다.',
         us: '운영자로서 여러 제품을 한 관리화면에서 일관되게 탐색하고 싶다.',
         ac: ['<code>console-shell</code> 레일(1차)+2단 LNB(2차), <code>sectionOf/labelOf</code>', '순환 의존 0(DSM 완전 하삼각)', '패널 고정/플로팅/핀·세션 유지'],
@@ -1873,49 +1839,103 @@
         dep: '관리화면 틀의 시작점. 이후 화면들의 전제.'
       },
       {
-        id: 'S3', grp: '목표1', sprint: 'S3', title: '위성 스쿼드별 화면 일관성 및 UX 개선 / 업셀', st: 'warn', pri: 'P1',
-        owner: '유라 + 위성 시민들', start: '2026-08-03', end: '2026-08-21', ddays: '14일', mod: ['M7'],
-        purpose: '업셀·상품 스쿼드 화면(상품 진열·추천·주문·업셀 위젯)을 SDS 기준으로 일관성·UX를 개선한다.',
-        us: '운영자로서 상품 진열·추천·업셀 설정을 일관된 UI로 쓰고 싶다.',
-        ac: ['업셀·상품 전 화면 SDS 적용', 'widget-card 등 공용 컴포넌트 재사용', '빈/에러/권한 상태 보완'],
-        demo: ['상품/추천 메뉴 진입 → 일관된 설정 흐름'],
-        dep: 'S2 IA·SDS 기반. 업셀 스쿼드와 협업.'
+        id: 'S3', grp: '목표1', sprint: 'S3', title: '공통 페이지·레이아웃 통합', st: 'good', pri: 'P0',
+        owner: '설계자2 + 개발자', start: '2026-07-27', end: '2026-08-13', ddays: '14일', mod: ['M7'],
+        purpose: 'TopBar·검색·drawer 등 공통 레이아웃 프리미티브를 통합한다.',
+        us: '운영자로서 어느 화면이든 같은 조작 방식을 기대하고 싶다.',
+        ac: ['<code>top-bar</code> 포털 슬롯(스크롤 영역 밖 고정)·<code>search-sheet</code> FAB(3모드)', '공통 프리미티브(NavItem/Section/Badge/AddBtn)', '전 페이지 일관 적용'],
+        demo: ['어느 페이지든 검색 FAB·TopBar 동일 동작'],
+        dep: 'S2 IA 위에서 정의.'
       },
       {
-        id: 'S4', grp: '목표1', sprint: 'S4', title: '위성 스쿼드별 화면 일관성 및 UX 개선 / 푸시', st: 'warn', pri: 'P1',
-        owner: '유라 + 위성 시민들', start: '2026-08-24', end: '2026-09-11', ddays: '15일', mod: ['M7'],
-        purpose: '푸시·메시지 스쿼드 화면(온사이트·광고·공지·발송이력·설정)을 SDS 기준으로 일관성·UX를 개선한다.',
-        us: '운영자로서 메시지·푸시를 일관된 UI로 안전하게 발송하고 싶다.',
-        ac: ['푸시·메시지 전 화면 SDS 적용', '발송 전 미리보기·대상수·한도 등 발송 안전 UX', '빈/에러/권한 상태 보완'],
-        demo: ['메시지 메뉴 진입 → 일관된 발송 흐름'],
-        dep: 'S2 IA·SDS 기반. 푸시 스쿼드와 협업. 푸시 화면 신규.'
+        id: 'S4', grp: '목표1', sprint: 'S4', title: '위성 스쿼드 기존 화면 유지/연결 (리뷰, 푸시, 업셀, 캔버스)', st: 'warn', pri: 'P1',
+        owner: '유라 + 개발자', start: '2026-07-29', end: '2026-08-18', ddays: '14일', mod: ['M7'],
+        purpose: '상품·리뷰·메시지·사이트 등 제품 화면군을 통합 관리화면에 구현한다.',
+        us: '운영자로서 각 제품 기능을 통합 관리화면에서 쓰고 싶다.',
+        ac: ['제품별 화면군(상품·리뷰·메시지·사이트) 골격', '<code>widget-card</code> 등 공용 컴포넌트 재사용', '목업 → 실연동 경로(mock/실데이터 경계) 표시'],
+        demo: ['상품/리뷰 메뉴 진입 → 해당 제품 화면'],
+        dep: 'S2 IA. 양 많음 → 스쿼드 병렬, 확장 가능 구조로.'
       },
       {
-        id: 'S5', grp: '목표1', sprint: 'S5', title: '위성 스쿼드별 화면 일관성 및 UX 개선 / 리뷰', st: 'warn', pri: 'P1',
-        owner: '유라 + 위성 시민들', start: '2026-09-14', end: '2026-10-16', ddays: '20일', mod: ['M7'],
-        purpose: '리뷰 스쿼드 화면(수집·설계·관리·분석·설정)을 SDS 기준으로 일관성·UX를 개선한다.',
-        us: '운영자로서 리뷰 기능을 일관된 UI로 막힘없이 쓰고 싶다.',
-        ac: ['리뷰 전 화면 SDS 토큰·공용 컴포넌트 적용', '수집→설계→관리→분석→설정 흐름 UX 정리', '빈/에러/권한 상태 보완'],
-        demo: ['리뷰 메뉴 진입 → 일관된 화면·흐름'],
-        dep: 'S2 IA·SDS 기반. 리뷰 스쿼드와 협업.'
+        id: 'S5', grp: '목표2', sprint: 'S5', title: '통합 온보딩 플로우 고도화', st: 'warn', nb: 1, pri: 'P0',
+        owner: '설계자2 + 개발자', start: '2026-08-14', end: '2026-08-28', ddays: '10일', mod: ['M7', 'M1'],
+        purpose: '여러 제품을 한 흐름으로 온보딩하는 전체 플로우를 고도화하고, 제품별 스텝을 모듈화한다.',
+        us: '신규 고객으로서 제품마다 따로 배우지 않고 한 번에 시작하고 싶다.',
+        ac: ['통합 온보딩 플로우(제품 선택 → 설정 분기)·완료율 추적·중단 복귀(<code>sub_status</code>)', '제품별 스텝 모듈(리뷰/업셀/푸시…)·건너뛰기·완료 체크'],
+        demo: ['가입 → 통합 온보딩 → 핵심 제품 활성화'],
+        dep: 'CORE-696 기반 고도화. 통합 틀(목표1) 위에서 정합.'
       },
       {
-        id: 'S6', grp: '목표1', sprint: 'S6', title: '위성 스쿼드별 화면 일관성 및 UX 개선 / 캔버스', st: 'warn', pri: 'P1',
-        owner: '유라 + 위성 시민들', start: '2026-10-19', end: '2026-10-30', ddays: '10일', mod: ['M7'],
-        purpose: '캔버스(사이트·페이지 빌더) 화면을 SDS 기준으로 일관성·UX를 개선한다.',
-        us: '운영자로서 사이트/페이지를 일관된 편집 UI로 구성하고 싶다.',
-        ac: ['캔버스 편집 화면 SDS 적용', '캔버스·속성 패널·디바이스 전환 UX 정리', '빈/에러/권한 상태 보완'],
-        demo: ['사이트 편집 진입 → 일관된 캔버스·속성 패널'],
-        dep: 'S2 IA·SDS 기반. 캔버스 스쿼드와 협업.'
-      },
-      {
-        id: 'S7', grp: '목표2', sprint: 'S7', title: '통합 튜토리얼 + 초기 세팅', st: 'warn', nb: 1, pri: 'P2',
-        owner: '유라 + 김원', start: '2026-11-02', end: '2026-11-30', ddays: '21일', mod: ['M7'],
+        id: 'S6', grp: '목표2', sprint: 'S6', title: '통합 튜토리얼 + 초기 세팅', st: 'warn', nb: 1, pri: 'P2',
+        owner: '유라 + 개발자', start: '2026-08-19', end: '2026-09-11', ddays: '18일', mod: ['M7'],
         purpose: '핵심 기능 사용법을 인앱 튜토리얼로 안내하고, 10분 내 기본 세팅을 끝내는 초기 세팅 플로우를 제공한다.',
         us: '운영자로서 직접 해보며 익히고, 가입 후 10분 만에 기본 세팅을 끝내고 싶다.',
         ac: ['인앱 가이드/툴팁 오버레이·진행 추적·다시 보기', '연동 → 기본값 자동 적용(스킨/위젯/SEO/가격/알림톡)', '핵심 설정만 노출·완료까지 시간 측정(목표 10분)'],
         demo: ['첫 진입 튜토리얼 → 추천 기본값 → 완료 타이머'],
-        dep: '위성 스쿼드 화면(S3~S6)이 가리킬 대상. 통합 틀(목표1) 위에서 정합.'
+        dep: 'S5 온보딩 + S4 제품화면군 (가리킬 대상).'
+      },
+      {
+        id: 'S7', grp: '목표3', sprint: 'S7', title: '인사이트/통계 페이지 (헤파카 임베드)', st: 'warn', pri: 'P1',
+        owner: '설계자2 + 개발자', start: '2026-08-31', end: '2026-09-18', ddays: '15일', mod: ['M7'],
+        purpose: '헤파카 BI/리포트를 통합 관리화면 안에 임베드해 운영자에게 노출한다.',
+        us: '운영자로서 통계를 별도 도구 없이 관리화면에서 보고 싶다.',
+        ac: ['헤파카 그라파나/리포트 임베드', '샵 컨텍스트 연동(현재 선택 샵)', '권한 반영(행 수준 보안)'],
+        demo: ['인사이트 메뉴 → 헤파카 대시보드 임베드 표시'],
+        dep: 'S2 IA, 외부 분석 임베드(개발).'
+      },
+      {
+        id: 'S9', grp: '목표3', sprint: 'S9', title: 'KPI 대시보드 · 전역 지표 drawer', st: 'good', nb: 1, pri: 'P1',
+        owner: '설계자2 + 개발자', start: '2026-09-21', end: '2026-10-16', ddays: '15일', mod: ['M7'],
+        purpose: '전 지표 차트(크로스 툴팁)와 어디서든 여는 지표 drawer를 제공한다.',
+        us: '운영자로서 어느 화면에서든 핵심 지표를 빠르게 확인하고 싶다.',
+        ac: ['<code>kpi-dashboard</code>: 전 지표 차트 + <code>syncId</code> 크로스 툴팁', '<code>metrics-drawer</code> 우측 drawer(전체 높이, 샵 전환)', '기간 하이라이트(진단 슬롯 A/B)'],
+        demo: ['지표 바로보기 → drawer에서 전 지표 대시보드'],
+        dep: '인사이트 표면 세트.'
+      },
+      {
+        id: 'S8', grp: '목표3', sprint: 'S8', title: '고객 세그먼트 화면', st: 'warn', nb: 1, pri: 'P1',
+        owner: '유라 + 개발자', start: '2026-09-14', end: '2026-10-08', ddays: '15일', mod: ['M7'],
+        purpose: '고객을 조건으로 세그먼트화해 조회·관리한다.',
+        us: '마케터로서 타깃 세그먼트를 만들어 캠페인에 쓰고 싶다.',
+        ac: ['조건 빌더(속성·행동, RFM)', '멤버 수·미리보기', '저장/재사용 → 캠페인/푸시 연결'],
+        demo: ['"휴면 고객" 세그먼트 생성 → 인원 확인'],
+        dep: '인사이트 세트. RFM 조건 빌더 컴포넌트.'
+      },
+      {
+        id: 'S10', grp: '목표3', sprint: 'S10', title: '코호트·리텐션 화면', st: 'warn', nb: 1, pri: 'P1',
+        owner: '유라 + 개발자', start: '2026-10-12', end: '2026-10-30', ddays: '15일', mod: ['M7'],
+        purpose: '가입/첫구매 코호트의 리텐션을 시각화한다.',
+        us: '마케터로서 코호트별 잔존을 보고 개선점을 찾고 싶다.',
+        ac: ['코호트 정의(가입/첫구매월)', '리텐션 표/히트맵', '기간 비교'],
+        demo: ['월별 코호트 → 리텐션 히트맵'],
+        dep: '인사이트 세트. 히트맵 차트 컴포넌트.'
+      },
+      {
+        id: 'S12', grp: '목표3', sprint: 'S12', title: '고객 여정 화면', st: 'warn', nb: 1, pri: 'P1',
+        owner: '유라 + 개발자', start: '2026-11-02', end: '2026-11-20', ddays: '15일', mod: ['M7'],
+        purpose: '고객의 행동/구매 여정을 단계로 시각화한다.',
+        us: '마케터로서 고객이 어디서 이탈하는지 보고 싶다.',
+        ac: ['여정 단계 정의(행동 이벤트 기반)', '단계별 전환/이탈', '세그먼트 필터'],
+        demo: ['여정 보기 → 단계별 전환율·이탈 지점'],
+        dep: '인사이트 세트.'
+      },
+      {
+        id: 'S13', grp: '목표3', sprint: 'S13', title: '퍼널·유입 리포트', st: 'warn', nb: 1, pri: 'P1',
+        owner: '유라 + 개발자', start: '2026-11-23', end: '2026-12-09', ddays: '13일', mod: ['M7'],
+        purpose: '유입→전환 퍼널과 채널/캠페인 성과를 리포트한다.',
+        us: '마케터로서 어느 단계·채널이 약한지 보고 싶다.',
+        ac: ['퍼널 단계 전환율', '채널/캠페인 분해', '방문자수·전환율 부재 시 <code>missing_context</code> 표기(추정 금지)'],
+        demo: ['퍼널 리포트 → 단계별 드롭 + 채널 기여'],
+        dep: '인사이트 세트.'
+      },
+      {
+        id: 'S11', grp: '목표3', sprint: 'S11', title: '인박스 · 알림 센터', st: 'warn', nb: 1, pri: 'P1',
+        owner: '설계자2 + 개발자', start: '2026-10-19', end: '2026-11-13', ddays: '20일', mod: ['M7'],
+        purpose: '진단·위험·승인·멘션을 한 인박스로 모아 처리한다.',
+        us: '운영자로서 챙길 일을 한 곳에서 보고 처리하고 싶다.',
+        ac: ['통합 인박스(진단/위험/승인/멘션 필터)', '승인/처리 액션(승인 대기 항목 검토)', '읽음/스누즈'],
+        demo: ['인박스 → 승인 대기 항목 검토/승인'],
+        dep: '인사이트 세트. 인박스 카드 컴포넌트.'
       }
     ];
 
@@ -1944,34 +1964,67 @@
         { t: 'sectionOf/labelOf·핀 세션유지·호버 미리보기', d: 'full' }
       ],
       S3: [
-        { r: '/console/upsell', t: '업셀 위젯 설정', d: 'mock' },
-        { r: '/console/product', t: '상품 허브(지표+3섹션)', d: 'full' },
-        { r: '/console/product/recommend', t: 'AI 추천(+수동/가중치/옵션셋)', d: 'full' },
-        { r: '/console/product/display/events', t: '이벤트·프로모션', d: 'full' },
-        { r: '/console/product/orders', t: '주문 관리(상태 탭·테이블)', d: 'full' },
-        { r: '/console/product/display', t: '진열(main/all/detail/cart)', d: 'mock' }
+        { t: 'top-bar 포털 슬롯(고정 헤더·브레드크럼)', d: 'full' },
+        { t: 'search-sheet FAB 3모드(floating/side/full)', d: 'full' },
+        { t: '전 페이지 일관 적용', d: 'full' }
       ],
       S4: [
-        { r: '/console/message/ads', t: '광고성 메시지(세팅·프리셋)', d: 'full' },
-        { r: '/console/message/history', t: '발송 내역', d: 'full' },
-        { r: '/console/message/onsite', t: '온사이트/공지/설정', d: 'mock' },
-        { r: '/console/push', t: '푸시 캠페인 — 준비중', d: 'stub' }
-      ],
-      S5: [
+        { g: '상품 (12페이지)' },
+        { r: '/console/product', t: '상품 허브(지표+3섹션)', d: 'full' },
+        { r: '/console/product/orders', t: '주문 관리(상태 탭·테이블)', d: 'full' },
+        { r: '/console/product/recommend', t: 'AI 추천(+수동/가중치/옵션셋)', d: 'full' },
+        { r: '/console/product/display/events', t: '이벤트·프로모션', d: 'full' },
+        { r: '/console/product/display', t: '진열(main/all/detail/cart)', d: 'mock' },
+        { g: '리뷰 (27페이지 · 최대 영역)' },
         { r: '/console/review', t: '리뷰 목록(통계·탭·AI태그)', d: 'full' },
         { r: '/console/review/collect/request', t: '수집 4채널(요청/스토어/SNS/스태프)', d: 'full' },
         { r: '/console/review/design/induce', t: '설계 4종·라이브 미리보기', d: 'full' },
         { r: '/console/review/manage/badge', t: '관리 4종(뱃지/댓글/키워드/연동)', d: 'full' },
         { r: '/console/review/analysis/briefing', t: '분석 5종(브리핑/모니터링/태그…)', d: 'full' },
-        { r: '/console/review/settings/points', t: '설정 7종(포인트/설문/갤러리…)', d: 'mock' }
+        { r: '/console/review/settings/points', t: '설정 7종(포인트/설문/갤러리…)', d: 'mock' },
+        { g: '메시지 (6페이지)' },
+        { r: '/console/message/ads', t: '광고성 메시지(세팅·프리셋)', d: 'full' },
+        { r: '/console/message/history', t: '발송 내역', d: 'full' },
+        { r: '/console/message/onsite', t: '온사이트/공지/설정', d: 'mock' },
+        { g: '사이트 · 기타' },
+        { r: '/console/site', t: '웹빌더(캔버스·섹션·디바이스 토글)', d: 'mock' },
+        { r: '/console/upsell', t: '업셀 위젯 설정', d: 'mock' },
+        { r: '/console/push', t: '푸시 — 준비중', d: 'stub' }
+      ],
+      S5: [
+        { t: '전용 온보딩 플로우 없음 — 신규 설계 필요', d: 'none' },
+        { r: '/console/create', t: '생성 스튜디오(온보딩 아님)', d: 'full' }
       ],
       S6: [
-        { r: '/console/site', t: '웹빌더/캔버스(섹션·속성·디바이스 토글)', d: 'mock' }
-      ],
-      S7: [
         { r: '/console/settings', t: '설정 4탭(개인/계정/조직/구독)·폼 목업', d: 'mock' },
         { r: '/console/ops-guide', t: '운영 가이드(내부·읽기전용)', d: 'full' },
         { t: '인앱 튜토리얼 오버레이·초기세팅 위저드 없음', d: 'none' }
+      ],
+      S7: [
+        { r: '/console/analytics', t: '분석 개요(3축)', d: 'full' },
+        { r: '/console/analytics/signup', t: '회원가입 분석(누적 막대)', d: 'full' },
+        { r: '/console/analytics/product', t: '축별 상세', d: 'mock' },
+        { t: '⚠ 헤파카 임베드 아님 — 네이티브 CSS 목업', d: 'none' }
+      ],
+      S8: [
+        { r: '/console/customer', t: '고객 조회(고밀도 테이블)', d: 'full' },
+        { r: '/console/customer/segments', t: '세그먼트 — 조건빌더(RFM) 없음', d: 'mock' }
+      ],
+      S9: [
+        { r: '/console/home', t: '홈 KPI 타일(6열·변화율)', d: 'full' },
+        { t: '전역 지표 drawer(metrics-drawer) 미구현', d: 'none' }
+      ],
+      S10: [{ r: '/console/customer/cohort', t: '코호트·리텐션 히트맵', d: 'full' }],
+      S11: [
+        { r: '/console/inbox', t: '인박스(진단 카드+대화)', d: 'full' },
+        { r: '/console/inbox/alerts', t: '위험 알림(확인/무시)', d: 'full' },
+        { r: '/console/inbox/approvals', t: '승인 대기(승인/검토/반려)', d: 'full' },
+        { r: '/console/inbox/mentions', t: '멘션/안읽음/진단 탭·필터', d: 'stub' }
+      ],
+      S12: [{ r: '/console/customer/journey', t: '고객 여정(퍼널+전환 게이지)', d: 'full' }],
+      S13: [
+        { r: '/console/analytics/funnel', t: '퍼널(6단계 전환율)', d: 'full' },
+        { r: '/console/acquisition', t: '유입 리포트 — 준비중', d: 'stub' }
       ]
     };
     /* 판정 기본값 — 화면(라우트)별 초기 UX/SDS 추정. g=타당/준수 · y=부분/리스타일 · r=재설계/미적용.
